@@ -1,16 +1,8 @@
-import { useEffect } from 'react'
 import './App.css'
 
 const WeatherCard = ({weatherInfo, units, setUnits}) => {
     return (
         <div className="weatherContainer">
-            {/*
-                pais, ciudad, grados centigrados, boton para transformar a Fahrenheit,
-                humedad, temperatura maxima, descripcion del clima, icono
-                http://openweathermap.org/img/wn/10d@2x.png
-                */
-            
-            }
            <section className="card">
                 <span className='cardPlace'>{weatherInfo.data?.name}, {weatherInfo.data?.sys.country}</span>
                 <div className="graphicWeather">

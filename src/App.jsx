@@ -7,7 +7,6 @@ function App() {
   const [weather, setWeather] = useState({})
   const [permissionError, setPermissionError] = useState('')
   const [units, setUnits] = useState(true)
-  const key = 'f38796c3d397c9b3b8ea834ea7f114b8'
   console.log(units)
 
   const getWeather = (pos) => {
@@ -25,6 +24,7 @@ function App() {
     } else {
       setPermissionError('El tiempo de espera ha caducado, intentalo más tarde.')
     }
+    alert(permissionError)
   }
 
   const getPermission = () => {
